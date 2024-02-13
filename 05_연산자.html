@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_연산자.html</title>
+</head>
+<body>
+    
+    <h3>연산자</h3>
+    <script>
+
+        // 1. () 최우선 연산자
+        document.write(3+4+5/2); //9.5
+        document.write((3+4+5)/2); //6
+        document.write("<hr>");
+
+        // 2. 대입 연산자
+        let num = 3; // 초기값
+
+        num = num + 2 ; // 5 = 3 + 2
+        document.write(num+ "<hr>");
+        
+        num += 2; // 5+2
+        document.write(num+ "<hr>");
+
+        num = num - 3 ; //7-3
+        document.write(num+ "<hr>");
+
+        num -= 3; //4-1
+        document.write(num+ "<hr>");
+        
+    </script>
+</body>
+</html>

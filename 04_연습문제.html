@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_연습문제.html</title>
+</head>
+
+<body>
+
+    <h3>연산자 연습문제</h3>
+    <script>
+        //문1) 임의의 정수가 짝수(2의 배수)인지 확인하시오
+        // -> 짝수? 2로 나누어서 나머지 0
+        let x = 5;
+        document.write(x%2==0);
+        // 4%2
+        // 0 == 0
+        // true
+
+        document.write(x%2!=1);
+        // 4% 2 , 0 ! =1 , true
+        document.write("<hr>")
+
+        //문2) 임의의 정수가 3의 배수인지 확인하시오
+        let a = 3;
+        document.write(a%3==0);
+        document.write("<hr>")
+
+        //문3) 임의의 정수가 4의 배수인지 확인하시오
+
+        let c = 8;
+        document.write(c%4==0);
+        document.write("<hr>")
+
+        //문4) 해당 년도가 윤년인지 확인하시오
+        // -> 4년마다 한번씩 2월이 29일
+        let b = 2024 ;
+        document.write(b%4==0);
+        document.write("<hr>")
+
+
+        //문5) 임의의 정수가 2의 배수이면서 5의 배수인지 확인하시오
+        //10의배수 2의배수이면서 5의배수
+        // 10, 20, 30, 40 ...
+        let d = 50;
+        document.write(d%2==0 && d%5==0);
+        document.write("<hr>")
+
+        //문6) 임의의 정수가 1 또는 3인지 확인하시오
+        
+        let code = 3 ; 
+        document.write(code==1 || code==3);
+        document.write("<hr>")
+
+        //문7) 국어점수가 80 ~ 89 사이인지 확인하시오
+        let score = 71 ;
+        document.write(score>=80 && score<=89);
+        document.write("<hr>")
+        
+        //문8) 해당 년도가 윤년인지 확인하시오
+        let year =2024;
+        document.write(year%4==0 && year%100!=0 || year%400==0);
+
+        
+    </script>
+
+</body>
+
+</html>
