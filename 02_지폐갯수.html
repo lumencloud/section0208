@@ -27,37 +27,76 @@
                     └────────────┘
         */
 
+        // let money = 54320;
+
+        // let a = parseInt(money/10000);
+        // money = money%10000;
+        // let b = parseInt(money/1000);
+        // money = money%1000;
+        // let c = parseInt(money/100);
+        // money = money%100;
+        // let d = parseInt(money/10);
+
+        // let result = ""; //결과값
+        // result = result + "<table border='1'>";
+        // result = result + "<tr>";
+        // result = result + "   <th>만원</th>";
+        // result = result + "   <td>" + a + "</td>";
+        // result = result + "</tr>";
+        // result = result + "<tr>";
+        // result = result + "   <th>천원</th>";
+        // result = result + "   <td>" + b + "</td>";    
+        // result = result + "</tr>";
+        // result = result + "<tr>";
+        // result = result + "   <th>백원</th>";
+        // result = result + "   <td>" + c+ "</td>";
+        // result = result + "</tr>";
+        // result = result + "<tr>";
+        // result = result + "   <th>십원</th>";
+        // result = result + "   <td>" + d+ "</td>";
+        // result = result + "</tr>";
+        // result = result + "</table>";
+
+        // document.getElementById("demo").innerHTML = result;
+
         let money = 54320;
-        let a = parseInt(money/10000);
-        money = money%10000;
-        let b = parseInt(money/1000);
-        money = money%1000;
-        let c = parseInt(money/100);
-        money = money%100;
-        let d = parseInt(money/10);
-        
+
+        document.write(money);
+        document.write("<hr>");
+        document.write(money / 10000); // 5.432
+        document.write("<hr>");
+        document.write(money % 10000); //4320
+        document.write("<hr>");
+
+        let a = parseInt(money / 10000); //5
+        money = money % 10000;           // 4320 
+        let b = parseInt(money / 1000);   //4
+        money = money % 1000;             //320
+        let c = parseInt(money / 100); //3
+        money = money % 100;              //20
+        let d = parseInt(money / 10); //2
+
         let result = ""; //결과값
         result = result + "<table border='1'>";
         result = result + "<tr>";
         result = result + "   <th>만원</th>";
-        result = result + "   <td>" + a + "</td>";
+        result = result + "   <td>" + a + "장</td>";
         result = result + "</tr>";
         result = result + "<tr>";
         result = result + "   <th>천원</th>";
-        result = result + "   <td>" + b + "</td>";    
+        result = result + "   <td>" + b + "장</td>";
         result = result + "</tr>";
         result = result + "<tr>";
         result = result + "   <th>백원</th>";
-        result = result + "   <td>" + c+ "</td>";
+        result = result + "   <td>" + c + "장</td>";
         result = result + "</tr>";
         result = result + "<tr>";
         result = result + "   <th>십원</th>";
-        result = result + "   <td>" + d+ "</td>";
+        result = result + "   <td>" + d + "장</td>";
         result = result + "</tr>";
         result = result + "</table>";
 
-        document.getElementById(demo).innerHTML = result;
-
+        document.getElementById("demo").innerHTML = result;
 
     </script>
 </body>

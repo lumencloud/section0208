@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_if.html</title>
+</head>
+
+<body>
+
+    <h3>if조건문</h3>
+
+    <script>
+
+        /*
+            제어문
+            -프로그램의 흐름을 제어
+            -조건문: if문, switch-case문
+            -반복문: for문, while문 , do~while문
+            -break문
+            -continue문 
+        */
+
+        //성적프로그램
+
+        let name = "무궁화";
+        let kor = 100, eng = 100, mat = 33;
+
+        //총점 구하시오.
+        let total = kor + eng + mat;
+
+        //평균구하시오
+        let aver = parseInt(total / 3);
+
+        document.write("이름 : " + name + "<hr>");
+        document.write("국어 : " + kor + "<hr>");
+        document.write("영어 : " + eng + "<hr>");
+        document.write("수학 : " + mat + "<hr>");
+        document.write("총점 : " + total + "<hr>");
+        document.write("평균 : " + aver + "<hr>");
+
+        //문1) 평균 95점 이상이면 장학생 출력
+        if (aver >= 95) {//91>=95
+            document.write("<span style='color:blue; font-weight:bold;'>장학생</span><hr>")
+        }
+        //1 형식 단순 if문 ^
+
+        //문2) 국어점수가 70점 이상이면 합격, 아니면 불합격
+        if (kor >= 70) {//100>=70
+            document.write("<span style='color:blue; font-weight:bold;'>국어:합격</span><hr>")
+        } else {
+            document.write("<span style='color:blue; font-weight:bold;'>국어:불합격</span><hr>")
+        }
+
+        //문3) 수학점수가 90점이상이면 A
+        //문3) 수학점수가 80점이상이면 B
+        //문3) 수학점수가 70점이상이면 C
+        // 나머지는 F
+        if (mat >= 90) {
+            document.write("수학A학점<hr>")
+        } else if (mat >= 80) {
+            document.write("수학B학점<hr>")
+
+        } else if (mat >= 70) {
+            document.write("수학C학점<hr>")
+
+        } else if (mat >= 60) {
+            document.write("수학D학점<hr>")
+
+        } else {
+            document.write("수학F학점<hr>")
+
+        } // if end
+
+        // 4) 과락 .평균이 70점이상이면 합격
+        // 단 한 과목이라도 40점 미만이면 재시험
+        // 평균 70점 미만이면 불합격
+
+        if (mat < 40 || eng < 40 || kor < 40) {
+            document.write("재시험<hr>")
+        } else if (aver >= 70) {
+            document.write("합격<hr>")
+        } else if (aver < 70) {
+            document.write("불합격<hr>")
+        }
+
+
+
+    </script>
+</body>
+
+</html>
