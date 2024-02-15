@@ -25,7 +25,7 @@
         //성적프로그램
 
         let name = "무궁화";
-        let kor = 100, eng = 100, mat = 33;
+        let kor = 100, eng = 100, mat = 100;
 
         //총점 구하시오.
         let total = kor + eng + mat;
@@ -77,15 +77,31 @@
         // 단 한 과목이라도 40점 미만이면 재시험
         // 평균 70점 미만이면 불합격
 
-        if (mat < 40 || eng < 40 || kor < 40) {
-            document.write("재시험<hr>")
-        } else if (aver >= 70) {
-            document.write("합격<hr>")
-        } else if (aver < 70) {
-            document.write("불합격<hr>")
-        }
+        // if (mat < 40 || eng < 40 || kor < 40) {
+        //     document.write("재시험<hr>")
+        // } else if (aver >= 70) {
+        //     document.write("합격<hr>")
+        // } else if (aver < 70) {
+        //     document.write("불합격<hr>")
+        // }
+
+        // if (aver >= 70) {
+        //     if (kor < 40 || eng < 40 || mat < 40) {
+        //         document.write("재시험<hr>")
+        //     } else { document.write("합격<hr>") }
+        // } else {
+        //     document.write("탈락<hr>")
+        // }
 
 
+        // And 조건
+        // if (aver >= 70) {
+        //     if (kor >= 40 && eng >= 40 && mat >= 40) {
+        //         document.write("재시험<hr>")
+        //     } else { document.write("합격<hr>") }
+        // } else {
+        //     document.write("탈락<hr>")
+        // }
 
     </script>
 </body>
